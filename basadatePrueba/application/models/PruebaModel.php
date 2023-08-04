@@ -5,7 +5,7 @@ class PruebaModel extends CI_Model {
 
     public function getPruebaData() {
         // Obtener los datos de la tabla "prueba"
-        $query = $this->db->get('prueba');
+        $query = $this->db->get('usuario');
 
         // Verificar si hay datos
         if ($query->num_rows() > 0) {
