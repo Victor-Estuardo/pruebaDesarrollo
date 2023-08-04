@@ -39,9 +39,6 @@ class LoginController extends CI_Controller {
         $this->load->model('SesionModel'); // Asegúrate de tener un modelo para manejar la tabla de sesiones
         $this->SesionModel->crear_sesion($id_usuario, $token);
 
-        // Guardar el token en una cookie o en una variable de sesión
-        // Puedes elegir una de las siguientes opciones, no necesitas ambas
-
         // Guardar el token en una cookie (si prefieres usar cookies)
         $this->input->set_cookie('token', $token, 86400); // Cookie válida por 24 horas
 
