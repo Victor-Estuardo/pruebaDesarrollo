@@ -7,7 +7,9 @@ class PersonaController extends CI_Controller {
         parent::__construct();
         // Cargar la biblioteca session
         $this->load->library('session');
+      
     }
+
 
     public function crear_persona() {
         // Obtener los datos del formulario para crear una nueva persona
